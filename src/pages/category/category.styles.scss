@@ -1,0 +1,20 @@
+.category-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .title {
+      font-size: 38px;
+      margin: 0 auto 30px;
+    }
+  
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      
+  
+      & .collection-item {
+        margin: 0 10px 30px 10px;
+       
+      }
+    }
+  }

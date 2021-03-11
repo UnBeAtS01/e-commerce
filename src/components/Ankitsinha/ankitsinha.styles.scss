@@ -1,0 +1,82 @@
+
+    .nav{
+        position: absolute;
+        left: 50%;
+        z-index: 2;
+        color: white;
+    }
+
+    .button{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(129, 129, 129);
+        width: 40px;
+        height: 100%;
+        
+    }
+    .nav-links{
+        position:fixed;
+        background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+        background-blend-mode: multiply;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 50% -30%);
+        -webkit-clip-path: circle(100px at 50% -30%);
+        transition: all 1s ease-out;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nav-links-open{
+        clip-path: circle(1000px at 50% -30%);
+        -webkit-clip-path: circle(1000px at 50% -30%);
+
+    }
+        
+    .datatotal{
+        position: absolute;
+        flex-direction: column;
+        right: 60%;
+        .pos{
+            position: relative;
+            text-align: center;
+            justify-content: flex-end;
+        align-items: flex-end;
+            .image{
+                margin-top: 30px;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+            .datat{
+                margin-left: 50px;
+                font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Kaushan Script', cursive;
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .github{
+        text-decoration: none;
+        display:flex;
+       width: 60px;
+       height: 60px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        
+        .icon{
+            font-size:40px;
+        }
+    
+    }
+            }
+        }
+    }
+    
+    

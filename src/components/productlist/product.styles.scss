@@ -1,0 +1,51 @@
+.container-product{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom:1px solid grey;
+    box-shadow: grey;
+    font-size: 26px;
+    .ogg{
+        display: flex;
+        width: 28%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image{
+            padding: 10px;
+            width: 185px;
+            height: 200px;
+        }
+        .name{
+            display: flex;
+           padding-bottom: 5px;
+            justify-content: center;
+        }
+    }
+    
+    .price{
+        width: 28%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .quantity{
+        display: flex;
+        justify-content: center;
+        width: 28%;
+        .addsubt{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(126, 126, 126);
+            margin: 5px 8px;
+        }
+    }
+    .remove{
+        display: flex;
+        justify-content: center;
+        width: 8%;
+    }
+    
+}
