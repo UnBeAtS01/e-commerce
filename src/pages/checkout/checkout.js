@@ -4,6 +4,7 @@ import Particles from 'react-particles-js';
 import { connect } from 'react-redux';
 import Product from '../../components/productlist/product.component';
 import StripeCheckoutButton from '../../components/payment/payment.components';
+import { toggleCartHidden } from '../../redux/cart/cart.action';
 const CheckoutPage = ({ cartItem }) => {
     var sum = 0;
     cartItem.map(cartele => {
@@ -47,4 +48,6 @@ const mapStateToProps = state => {
         cartItem: state.cart.cartItem
     }
 }
+
+
 export default connect(mapStateToProps)(CheckoutPage);

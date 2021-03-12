@@ -4,11 +4,22 @@ import CarTItem from '../cart-item/cart-item.component'
 import './cart-box.styles.scss';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { toggleCartHidden } from '../../redux/cart/cart.action';
 class CartBOX extends React.Component {
     constructor(props) {
         super(props);
     }
+    onClick = (event) => {
+        if (this.props.hidden) {
+            this.props.toggleCartHidden();
+            this.props.history.push('/checkout');
+        }
+        else {
+            alert("you are not signin");
+            this.props.history.push('/signin');
+        }
 
+    }
     render() {
         const { cartItem, history } = this.props;
         return (
@@ -18,7 +29,7 @@ class CartBOX extends React.Component {
                     (<div className='cart-items'>
                         {cartItem.map(ele => (<CarTItem key={ele.id} item={ele} />))}
                     </div>) : <div className='add'>ADD ITEM TO SEE</div>}
-                <CustomButton onClick={() => history.push('/checkout')}>GO TO CHECKOUT</CustomButton>
+                <CustomButton onClick={this.onClick}>GO TO CHECKOUT</CustomButton>
             </div>
 
 
@@ -28,8 +39,13 @@ class CartBOX extends React.Component {
 
 };
 const mapStateToProps = (state) => {
-    return { cartItem: state.cart.cartItem }
+    return {
+        cartItem: state.cart.cartItem,
+        hidden: state.cart.hidden,
+    }
 }
 
-
-export default withRouter(connect(mapStateToProps)(CartBOX));
+const mapDispatchToProps = dispatch => ({
+    toggleCartHidden: () => dispatch(toggleCartHidden())
+})
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CartBOX));

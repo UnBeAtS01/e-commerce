@@ -5,7 +5,8 @@ import CartActionTypes from './cart.types';
 import { addItemToCart, deleteItemFromCart, subtractitem } from './cart.utils';
 const INITIAL_STATE = {
     hidden: true,
-    cartItem: []
+    cartItem: [],
+    inside: false
 }
 
 const cartReducer = (state = INITIAL_STATE, action) => {
@@ -30,6 +31,12 @@ const cartReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 cartItem: subtractitem(state.cartItem, action.payload)
             }
+        case CartActionTypes.DISPLAY:
+            return {
+                ...state,
+                inside: !state.inside
+            }
+
         default:
             return state;
     }

@@ -4,6 +4,8 @@ import './signIn.styles.scss';
 import CustomButton from '../custom-button/custom-button.components'
 import FormInput from '../Forminput/FormInput.components';
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
+import { connect } from 'react-redux';
+import { setInside } from '../../redux/cart/cart.action';
 class SignIn extends React.Component {
     constructor(props) {
         super(props);
@@ -19,6 +21,7 @@ class SignIn extends React.Component {
         try {
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({ email: '', password: '' })
+            this.props.setInside();
         } catch (error) {
             console.log(error)
         }
@@ -52,5 +55,8 @@ class SignIn extends React.Component {
     }
 
 }
-
-export default SignIn;
+const mapDispatchToProps = dispatch => ({
+    setInside: () => dispatch(setInside())
+}
+)
+export default connect(null, mapDispatchToProps)(SignIn);

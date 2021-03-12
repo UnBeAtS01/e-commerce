@@ -22,13 +22,14 @@ const Ankit = ({ ShowprojectBy, show }) => {
                         <img className='image' src={logo} />
                         <div className='datat'>
                             <div className='data1'>ANKIT SINHA</div>
-                            <div className='data2'>JADAVPUR UNIVERSITY</div>
+                            <div className='data2'>ankit.unbeat01@gmail.com</div>
                             <div className='icons'>
                                 <a className='github' href='https://github.com/unbeat01'><GitHubIcon className='icon' />
                                 </a>
                                 <a className='github' href='https://www.linkedin.com/in/ankit-sinha-5318721ba/'><LinkedInIcon className='icon' />
                                 </a>
                             </div>
+
 
 
                         </div>

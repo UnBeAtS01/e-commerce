@@ -35,7 +35,7 @@ class Header extends React.Component{
                         )
                             :
                             (
-                                <Link className='option' to='/signInSignOut'>SIGN IN</Link>
+                                <Link className='option' to='/signin'>SIGN IN</Link>
                             )
     
                     }
