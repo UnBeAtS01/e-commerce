@@ -10,7 +10,7 @@ class CartBOX extends React.Component {
         super(props);
     }
     onClick = (event) => {
-        if (this.props.hidden) {
+        if (this.props.inside) {
             this.props.toggleCartHidden();
             this.props.history.push('/checkout');
         }
@@ -41,7 +41,7 @@ class CartBOX extends React.Component {
 const mapStateToProps = (state) => {
     return {
         cartItem: state.cart.cartItem,
-        hidden: state.cart.hidden,
+        inside: state.cart.inside,
     }
 }
 

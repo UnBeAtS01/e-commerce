@@ -34,7 +34,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         case CartActionTypes.DISPLAY:
             return {
                 ...state,
-                inside: !state.inside
+                inside: state.inside = action.payload
             }
 
         default:

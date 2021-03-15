@@ -19,6 +19,7 @@ export const subtract = item => ({
     payload: item
 })
 
-export const setInside = () => ({
+export const setInside = (item) => ({
     type: CartActionTypes.DISPLAY,
+    payload: item
 })

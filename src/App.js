@@ -9,7 +9,7 @@ import { auth, createUserProfileDocument, signInWithGoogle } from './firebase/fi
 import { connect } from 'react-redux';
 import { setCurrentUser } from './redux/user/user.action';
 import CheckoutPage from './pages/checkout/checkout';
-
+import { setInside } from './redux/cart/cart.action';
 class App extends React.Component {
 
 
@@ -19,7 +19,7 @@ class App extends React.Component {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async user => {
       if (user) {
         const userRef = await createUserProfileDocument(user);
-
+        this.props.setInside(1);
         userRef.onSnapshot(snapShot => {
           this.props.setCurrentUser({
 
@@ -27,6 +27,7 @@ class App extends React.Component {
             ...snapShot.data()
           })
         })
+
       }
       else {
         this.props.setCurrentUser(user);
@@ -55,7 +56,8 @@ class App extends React.Component {
 
 }
 const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
+  setCurrentUser: user => dispatch(setCurrentUser(user)),
+  setInside: (item) => dispatch(setInside(item))
 });
 
 const mapStateToProps = ({ user }) => ({

@@ -7,11 +7,15 @@ import CartIcon from '../cart-icon/cart-icon.components';
 import CartBOX from '../cart-box/cart-box.components';
 import {connect} from 'react-redux';
 import Ankit from '../Ankitsinha/ankitsinha.component'
+import { setInside } from '../../redux/cart/cart.action';
 class Header extends React.Component{
     constructor(props){
         super(props);
     }
-  
+    onClick=(event)=>{
+       auth.signOut()
+       this.props.setInside(0)
+    }
     render(){
         return (
             <div className='header'>
@@ -30,7 +34,7 @@ class Header extends React.Component{
     
                     </Link>
                     {
-                        this.props.currUser ? (<div className='option ' onClick={() => auth.signOut()}> SIGN OUT</div>
+                        this.props.currUser ? (<div className='option ' onClick={this.onClick}> SIGN OUT</div>
     
                         )
                             :
@@ -60,5 +64,7 @@ const mapStateToProps=state=>({
     projectby:state.projectby
 })
 
-
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps=dispatch=>({
+ setInside: (item)=>dispatch(setInside(item))
+})
+export default connect(mapStateToProps,mapDispatchToProps)(Header);

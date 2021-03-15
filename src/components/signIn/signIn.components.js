@@ -5,7 +5,6 @@ import CustomButton from '../custom-button/custom-button.components'
 import FormInput from '../Forminput/FormInput.components';
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
-import { setInside } from '../../redux/cart/cart.action';
 class SignIn extends React.Component {
     constructor(props) {
         super(props);
@@ -21,9 +20,10 @@ class SignIn extends React.Component {
         try {
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({ email: '', password: '' })
-            this.props.setInside();
+
         } catch (error) {
-            console.log(error)
+            console.log(error);
+            alert('please provide valid email or password')
         }
     }
     handleChange = event => {
@@ -55,8 +55,5 @@ class SignIn extends React.Component {
     }
 
 }
-const mapDispatchToProps = dispatch => ({
-    setInside: () => dispatch(setInside())
-}
-)
-export default connect(null, mapDispatchToProps)(SignIn);
+
+export default SignIn;
