@@ -70,26 +70,26 @@ const INITIAL_STATE = {
             items: [
                 {
                     id: 10,
-                    name: 'Adidas NMD',
-                    imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
+                    name: 'Nike NMD',
+                    imageUrl: 'https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 220
                 },
                 {
                     id: 11,
                     name: 'Adidas Yeezy',
-                    imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8c25lYWtlcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 280
                 },
                 {
                     id: 12,
                     name: 'Black Converse',
-                    imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1581977012607-4091712d36f9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNuZWFrZXJzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 110
                 },
                 {
                     id: 13,
                     name: 'Nike White AirForce',
-                    imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTZ8fHNuZWFrZXJzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 160
                 },
                 {
@@ -101,7 +101,7 @@ const INITIAL_STATE = {
                 {
                     id: 15,
                     name: 'Nike Brown High Tops',
-                    imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1597248881519-db089d3744a5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c25lYWtlcnN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 160
                 },
                 {
@@ -126,31 +126,31 @@ const INITIAL_STATE = {
                 {
                     id: 18,
                     name: 'Black Jean Shearling',
-                    imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1544022613-e87ca75a784a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8amFja2V0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 125
                 },
                 {
                     id: 19,
                     name: 'Blue Jean Jacket',
-                    imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1549738712-da3cb334e1d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGphY2tldHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 90
                 },
                 {
                     id: 20,
                     name: 'Grey Jean Jacket',
-                    imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1604187365119-b4b0631f88d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGphY2tldHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 90
                 },
                 {
                     id: 21,
                     name: 'Brown Shearling',
-                    imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjZ8fGphY2tldHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 165
                 },
                 {
                     id: 22,
                     name: 'Tan Trench',
-                    imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1605022600390-071c6f969b32?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGphY2tldHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 185
                 }
             ]
@@ -163,7 +163,7 @@ const INITIAL_STATE = {
                 {
                     id: 23,
                     name: 'Blue Tanktop',
-                    imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 25
                 },
                 {
@@ -175,13 +175,13 @@ const INITIAL_STATE = {
                 {
                     id: 25,
                     name: 'Floral Dress',
-                    imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 80
                 },
                 {
                     id: 26,
                     name: 'Red Dots Dress',
-                    imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1501870190084-cdf29f15ef87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDJ8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 80
                 },
                 {
@@ -199,7 +199,7 @@ const INITIAL_STATE = {
                 {
                     id: 29,
                     name: 'White Blouse',
-                    imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1560282904-7adf21e5e0da?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAxfHxmYXNoaW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 20
                 }
             ]
@@ -212,19 +212,19 @@ const INITIAL_STATE = {
                 {
                     id: 30,
                     name: 'Camo Down Vest',
-                    imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1559582798-678dfc71ccd8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwZmFzaGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 325
                 },
                 {
                     id: 31,
-                    name: 'Floral T-shirt',
-                    imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
+                    name: 'T-shirt',
+                    imageUrl: 'https://images.unsplash.com/photo-1560889041-1814025efae4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 20
                 },
                 {
                     id: 32,
-                    name: 'Black & White Longsleeve',
-                    imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
+                    name: 'pinkish White Longsleeve',
+                    imageUrl: 'https://images.unsplash.com/photo-1516826957135-700dedea698c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8bWVucyUyMGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 25
                 },
                 {
@@ -241,8 +241,8 @@ const INITIAL_STATE = {
                 },
                 {
                     id: 35,
-                    name: 'Burgundy T-shirt',
-                    imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
+                    name: 'Burgundy',
+                    imageUrl: 'https://images.unsplash.com/photo-1600458563734-470aedd2f8f8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzd8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 25
                 }
             ]
