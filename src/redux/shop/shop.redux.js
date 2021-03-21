@@ -10,25 +10,25 @@ const INITIAL_STATE = {
                 {
                     id: 1,
                     name: 'Brown Brim',
-                    imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+                    imageUrl: 'https://images.unsplash.com/flagged/photo-1557581462-0bf3e5907811?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
                     price: 25
                 },
                 {
                     id: 2,
                     name: 'Blue Beanie',
-                    imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1551734413-5943d61e002a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8aGF0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 18
                 },
                 {
                     id: 3,
                     name: 'Brown Cowboy',
-                    imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1589903521522-6dfb45855f9b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTl8fGhhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 35
                 },
                 {
                     id: 4,
                     name: 'Grey Brim',
-                    imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1579542145952-05fd27275991?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjJ8fGhhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 25
                 },
                 {
@@ -40,7 +40,7 @@ const INITIAL_STATE = {
                 {
                     id: 6,
                     name: 'Palm Tree Cap',
-                    imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
+                    imageUrl: 'https://images.unsplash.com/photo-1582661702593-149b3f4f2927?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODV8fGhhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     price: 14
                 },
                 {
